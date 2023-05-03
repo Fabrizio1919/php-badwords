@@ -20,16 +20,12 @@
             <div class="card-body">
                 <form action="badwords.php" method="post">
                     <div class="mb-3">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" class="form-control" placeholder="Name...">
+                        <label for="badword">Parola cattiva</label>
+                        <input type="text" name="badword" id="badword" class="form-control">
                     </div>
                     <div class="mb-3">
-                        <label for="lastname">Lastname</label>
-                        <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Lastname...">
-                    </div>
-                    <div class="mb-3">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" class="form-control" placeholder="Password...">
+                        <label class="info" for="text">Testo:</label>
+                        <textarea class="form-control" placeholder="Text..." id="text" required name="text"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary start">Start</button>
                 </form>

@@ -1,12 +1,12 @@
 <?php
 
 // VARIABILI CHE PRENDIAMO DA INDEX.HTML 
-$name = $_POST['name'];
-$lastname = $_POST['lastname'];
-$password = $_POST['password'];
+$text = $_POST['text'];
+$badword = $_POST['badword'];
 
-$final_text = str_ireplace($lastname, '***', $name);
-$length_text = strlen($name);
+
+$final_text = str_ireplace($badword, '***', $text);
+$length_text = strlen($text);
 ?>
 
 <!DOCTYPE html>
@@ -20,8 +20,8 @@ $length_text = strlen($name);
 <body>
 <div class="container">
  <div class="mb-3">
-    <h3 class="name">Testo censurato:</h3>
-    <div class="lastname">
+    <h3 class="info">Testo censurato:</h3>
+    <div class="text">
         <?php echo $final_text ?>
     </div>
  </div>
